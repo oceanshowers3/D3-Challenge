@@ -6,5 +6,5 @@ Using the D3 techniques, we created a scatter plot that represents each state wi
 - Included state abbreviations in the circles.
 
 
-- Situated your axes and labels to the left and bottom of the chart.
+- Situated our axes and labels to the left and bottom of the chart.
 
