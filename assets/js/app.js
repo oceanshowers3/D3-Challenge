@@ -1,10 +1,10 @@
-// Set default x/y axis variables.
+// default x and y axes
 var defaultXAxis = "poverty";
 var defaultYAxis = "healthcare";
 
-// Function used for updating x-scale var upon click on axis label.
+// function for updating x scale on click 
 function xScale(data, defaultXAxis, chartWidth) {
-    // Create scales.
+    // create scale
     var xLinearScale = d3.scaleLinear()
         .domain([d3.min(data, d => d[defaultXAxis]) * .8,
             d3.max(data, d => d[defaultXAxis]) * 1.1])
@@ -12,7 +12,7 @@ function xScale(data, defaultXAxis, chartWidth) {
     return xLinearScale;
 }
 
-// Function used for updating xAxis var upon click on axis label.
+// function for updating x axis on click 
 function renderXAxes(newXScale, xAxis) {
     var bottomAxis = d3.axisBottom(newXScale);
     xAxis.transition()
