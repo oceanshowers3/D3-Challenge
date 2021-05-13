@@ -158,7 +158,7 @@ function makeResponsive() {
             data.age = +data.age;
             data.smokes = +data.smokes;
             data.income = +data.income;
-            data.obesity = data.obesity;
+            data.obesity = +data.obesity;
         });
 
         // Create x/y linear scales.
